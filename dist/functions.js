@@ -7,7 +7,15 @@
  * If the input is invalid throw an 'Invalid Input' exception.
  */
 function checkData(inputString) {
-	// your code goes here
+	if (typeof inputString !== "string") {
+		throw "Invalid Input";
+	}
+	if(inputString.length === 3) {
+		return true;
+		}
+		else { return false;
+		}
+	}
 }
 
 /*
@@ -18,7 +26,14 @@ function checkData(inputString) {
  * If the input is invalid throw an 'Invalid Input' exception.
  */
 function concatenateArrays(a, b) {
-	// your code goes here
+	
+		var myArray = ["a", "b"];
+			return myArray
+
+		
+		if(typeof (a, b) !== "array") {
+			throw "Invalid Input!";
+		}
 }
 
 /*
@@ -31,7 +46,9 @@ function concatenateArrays(a, b) {
  * If the input is invalid throw an 'Invalid Input' exception.
  */
 function fixProperNoun(noun) {
-	// your code goes here
+	var checkLetters = "britain";
+		
+console.log( checkLetters[0] === checkLetters[0].toUpperCase() );
 }
 
 /*
@@ -41,8 +58,14 @@ function fixProperNoun(noun) {
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  */
-function sortLetters(inputString) {
-	// your code goes here
+function sortLetters(a, b) {
+   var myString=(The dog ate my code); 
+   myString.sort();
+
+   if(typeof (a, b) !== "string") {
+			throw "Invalid Input!";
+		}
+
 }
 
 /*
@@ -53,26 +76,46 @@ function sortLetters(inputString) {
  * If the input is invalid throw an 'Invalid Input' exception.
  */
 function absVal(integer) {
-	// your code goes here
+	return Math.abs(integer)
+
+if(typeof (integer) != number) {
+			throw "Invalid Input!";
+		}
 }
 
-/*
- * PROBLEM `myMin`: (easy)
- * Write a function called `myMin` that takes two integers and returns the
- * smaller of the two numbers.
- *
- * If the input is invalid throw an 'Invalid Input' exception.
- */
 
-/*
- * PROBLEM `myMax`: (easy) - Actual Interview Question
- * Write a function called `myMax` that takes an array of integers ans returns
- * the largest.
- *
- * If the input is invalid throw an 'Invalid Input' exception.
- *
- * Insane mode: do this without using a for loop.
- */
+ // PROBLEM `myMin`: (easy)
+ //Write a function called `myMin` that takes two integers and returns the
+ //smaller of the two numbers.
+ function myMin(a, b) {
+ 	Math.min([a[,b])
+ 		return Math.min;
+
+if(typeof (myMin) != number) {
+			throw "Invalid Input!";
+		}
+ }
+ //If the input is invalid throw an 'Invalid Input' exception.
+
+
+
+ //PROBLEM `myMax`: (easy) - Actual Interview Question
+ //Write a function called `myMax` that takes an array of integers and returns
+ //the largest.
+ //[0, 4 6, 2, -3, -13]
+ function myMax(intArray){
+ 	var largest= intArray[0];
+ 	for(var i=0; i<length.intArray; i++) {
+ 		if (intArray[i]>largest) {
+ 			largest=intArray[i];
+ 		} 
+ 	}
+ 	return largest;
+ }
+ //If the input is invalid throw an 'Invalid Input' exception.
+ 
+//Insane mode: do this without using a for loop.
+ 
 
 /*
  * PROBLEM `getMonth`: (easy)
