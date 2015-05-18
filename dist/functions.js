@@ -12,10 +12,9 @@ function checkData(inputString) {
 	}
 	if(inputString.length === 3) {
 		return true;
-		}
+	}
 		else { return false;
 		}
-	}
 }
 
 /*
@@ -59,7 +58,7 @@ console.log( checkLetters[0] === checkLetters[0].toUpperCase() );
  * If the input is invalid throw an 'Invalid Input' exception.
  */
 function sortLetters(a, b) {
-   var myString=(The dog ate my code); 
+   var myString=("The dog ate my code"); 
    myString.sort();
 
    if(typeof (a, b) !== "string") {
@@ -109,39 +108,73 @@ if(typeof (myMin) != number) {
  		if (intArray[i]>largest) {
  			largest=intArray[i];
  		} 
- 	}
- 	return largest;
+	}
+ 	if(typeof (largest) != number) {
+			throw "Invalid Input!";
+	}
+	return largest;
  }
  //If the input is invalid throw an 'Invalid Input' exception.
  
 //Insane mode: do this without using a for loop.
  
 
-/*
- * PROBLEM `getMonth`: (easy)
- * Write a function called `getMonth` that maps a given integer to a month.
- *
- * For example:
- * getMonth(1) == 'January'
- * getMonth(3) == 'March'
- * etc.
- *
- * If the input is invalid throw an 'Invalid Input' exception.
- */
+
+// * PROBLEM `getMonth`: (easy)
+ //* Write a function called `getMonth` that maps a given integer to a month.
+ function getMonth(monthTonumber) {
+ 	var months= [
+	 	"January", 
+		"February", 
+		"March", 
+		"April", 
+		"May", 
+		"June", 
+		"July", 
+		"August", 
+		"September", 
+		"October", 
+		"November", 
+		"December"
+		];
+ 	return months[monthTonumber-1];
+ } 
+ //* For example:
+ // getMonth(1) == 'January'
+ // getMonth(3) == 'March'
+ //etc.
+ 
+ //If the input is invalid throw an 'Invalid Input' exception.
+
 
 /*
  * PROBLEM `randomElement`: (medium)
  * Create a function called `randomElement` that takes an array of values and
  * returns one randomly selected value from that array.
  */
+ 	var arrayValues = [
+	"cat",
+	"cheese",
+	"rainbow",
+	"taco",
+	"lambo",
+	"venereal disease",
+	"a fucking tiger",
+	]
+function randomElement (valueArray) {
 
+	var min=0
+
+	return Math.floor(Math.random() * (6 - min + 1))
+}
+console.log Math.floor
 /*
  * PROBLEM `studentPairs`: (medium)
  * Create a javascript function called `studentPairs` that takes an array of
  * student names and returns an array of randomly selected pairs of students
  * (array of arrays).
  */
-
+function studentPairs (name1, name2)
 /*
  * PROBLEM `sumSquares`: (medium)
  * Write a function called `sumSquares` that returns the sum of squares of all
