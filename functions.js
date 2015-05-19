@@ -174,7 +174,21 @@ console.log Math.floor
  * student names and returns an array of randomly selected pairs of students
  * (array of arrays).
  */
-function studentPairs (name1, name2)
+function studentPairs() {
+	var result = [];
+	while(students.length >=2) {
+		var pair = [];
+		
+		var random1 = Math.floor(Math.random()*(students.length)); 
+		pair.push(students.splice(rand1, 1)[0]);
+		
+		var random2 = Math.floor(Math.random()*(students.length)); 
+		pair.push(students.splice(rand2, 1)[0]);
+		
+		result.push(pair);
+	}
+	return result;
+}
 /*
  * PROBLEM `sumSquares`: (medium)
  * Write a function called `sumSquares` that returns the sum of squares of all
@@ -182,7 +196,9 @@ function studentPairs (name1, name2)
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  */
-
+function sumSquares(){
+	for(var i=0; i<length.intArray; i++)
+}
 /* 
  * PROBLEM `findMaxDiff`: (medium)
  * Given an array of integers, write a function called `findMaxDiff` that finds
