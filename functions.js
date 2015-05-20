@@ -24,16 +24,26 @@ function checkData(inputString) {
  *
  * If the input is invalid throw an 'Invalid Input' exception.
  */
-function concatenateArrays(a, b) {
-	
-		var myArray = ["a", "b"];
-			return myArray
 
-		
-		if(typeof (a, b) !== "array") {
-			throw "Invalid Input!";
+ [1,2,3] [4,5,6] result [1,2,3,4,5,6]
+ [] ["a", "b", "c"] => ["a", "b", "c"]
+
+function concatenateArrays(a, b) {
+	//create new array to hold result
+	//interate over a and add its elements to new array
+	//interate over b and add its elements to new array
+	//return array that i create
+
+		var result =[]
+		for (var i=0; i<a.length; i++){
+			result.push (a[i])
 		}
-}
+		var result =[]
+		for (var i=0; i<b.length; i++){
+			result.push (b[i])
+		}
+		return result; 
+
 
 /*
  * PROBLEM `fixProperNoun`: (easy)
@@ -45,10 +55,16 @@ function concatenateArrays(a, b) {
  * If the input is invalid throw an 'Invalid Input' exception.
  */
 function fixProperNoun(noun) {
-	var checkLetters = "britain";
-		
-console.log( checkLetters[0] === checkLetters[0].toUpperCase() );
+	
+	noun = noun.toLowerCase();
+	var fixedCase = noun.charAt(0).toUpperCase();
+	fixedCase += noun.substring(1);
+	return fixedCase
+
 }
+	if(typeof noun !== "string" || noun.length=0) {
+		throw "INvalid INput";
+	}
 
 /*
  * PROBLEM `sortLetters`: (easy)
@@ -75,9 +91,18 @@ function sortLetters(a, b) {
  * If the input is invalid throw an 'Invalid Input' exception.
  */
 function absVal(integer) {
-	return Math.abs(integer)
+	if(integer > 0) {
+		return integer * -1;
+	}
+	else {
+		return integer 
+	}
 
-if(typeof (integer) != number) {
+	if Math.floor(integer) !== integer {
+		throw "Invalid Input";
+	}
+
+	if(typeof integer != number || isNaN(number)) {
 			throw "Invalid Input!";
 		}
 }
@@ -86,11 +111,26 @@ if(typeof (integer) != number) {
  // PROBLEM `myMin`: (easy)
  //Write a function called `myMin` that takes two integers and returns the
  //smaller of the two numbers.
- function myMin(a, b) {
- 	Math.min([a[,b])
- 		return Math.min;
+ function myMin(integer1, integer2) {
+ 	var myArray = [integer1, integer2];
+ 	if (integer1 < integer2)
+ 		return integer1;
+ }
+ 	return integer2;
 
-if(typeof (myMin) != number) {
+
+	if Math.floor(integer1) !== integer {
+		throw "Invalid Input";
+	}
+
+	if(typeof integer1 != number || isNaN(number)) {
+			throw "Invalid Input!";
+		}
+	if Math.floor(integer2) !== integer {
+		throw "Invalid Input";
+	}
+
+	if(typeof integer2 != number || isNaN(number)) {
 			throw "Invalid Input!";
 		}
  }
